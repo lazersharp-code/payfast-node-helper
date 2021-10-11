@@ -1,0 +1,27 @@
+{
+  "name": "payfast-node-helper",
+  "version": "1.1.1",
+  "description": "Manage server side payfast methods",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lazersharp-code/payfast-node-helper.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "payfast",
+    "onsite",
+    "payments",
+    "subscriptions",
+    "subscription"
+  ],
+  "author": "Lazersharp",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.22.0",
+    "crypto-js": "^4.1.1",
+    "dns": "^0.2.2"
+  }
+}
