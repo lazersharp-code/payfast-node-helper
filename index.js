@@ -59,6 +59,10 @@ class PayfastSubscriptionHandler {
         }
     }
 
+    getPayfastData = (req) => {
+        return JSON.parse(JSON.stringify(req.body));
+    }
+
     async validateITN(req, paymentTotal) {
 
         const pfHost = this.sandbox ? "sandbox.payfast.co.za" : "www.payfast.co.za";
