@@ -59,7 +59,7 @@ class PayfastSubscriptionHandler {
         }
     }
 
-    async validateITN(req) {
+    async validateITN(req, paymentTotal) {
 
         const pfHost = this.sandbox ? "sandbox.payfast.co.za" : "www.payfast.co.za";
 
@@ -146,7 +146,7 @@ class PayfastSubscriptionHandler {
 
         const check1 = pfValidSignature(pfData, pfParamString, this.passPhrase);
         const check2 = pfValidIP(req);
-        const check3 = pfValidPaymentData(cartTotal, pfData);
+        const check3 = pfValidPaymentData(paymentTotal, pfData);
         const check4 = pfValidServerConfirmation(pfHost, pfParamString);
 
         if (check1 && check2 && check3 && check4) {

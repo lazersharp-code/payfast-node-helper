@@ -1,6 +1,6 @@
 {
   "name": "payfast-node-helper",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Manage server side payfast methods",
   "main": "index.js",
   "repository": {
